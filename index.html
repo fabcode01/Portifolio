@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+    
+    
+
+
+
+
+    <main>
+        <img src="imgs/Prancheta 1.png" alt="icon.png">
+        <h1>Hi,</h1>
+        <h2>i'm a student of Web Development and Designer</h2>
+        <p class="left" onclick="fproject()">Projects</p>
+        <p class="right" onclick="fcontact()">Social Media</p>
+        <div class="clear"></div>
+        <hr>
+        <div id="projects">
+            <ul>
+                <a href="https://fabcode01.github.io/calculadora/" target="_blank">
+                <li>calculator</li>
+                </a>
+                <a href="https://fabcode01.github.io/projeto-login/" target="_blank">
+                    <li>login screen</li>
+                </a>
+                <a href="https://fabcode01.github.io/javascript/desafios/exercicio01/index.html" target="blank">
+                    <li>time of day</li>
+                </a>
+                <a href="https://fabcode01.github.io/javascript/desafios/exercicio03/index.html" target="_blank">
+                    <li>counter</li>
+                </a>
+            </ul>
+        </div>
+        <div id="contact">
+            <ul>
+                
+                <a href="https://github.com/fabcode01" target="_blank">
+                    <li><img src="imgs/github.png" alt=""></li>
+                
+                </a>
+                
+                <a href="https://instagram.com/fab.arttt" target="blank">
+                <li><img src="imgs/Instagram_icon.png.webp" alt=""></li>
+                </a>
+                </a>
+            </ul>
+        </div>
+
+    </main>
+
+    <script>
+        var hpro = document.getElementById('projects')
+        var hcont = document.getElementById('contact')
+        function fproject(){
+            
+            if (hpro.style.display == 'block'){
+                hpro.style.display = 'none'
+            }else{
+                
+                hcont.style.display = 'none'
+                hpro.style.display = 'block'
+                
+            }
+
+        }
+
+        function fcontact(){
+            if (hcont.style.display == 'block'){
+                hcont.style.display = 'none'
+            }else{
+                hpro.style.display = 'none'
+                hcont.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
